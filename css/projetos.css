@@ -6,6 +6,21 @@
   align-items: center;
 }
 
+.projetos {
+  margin-top: 100px; /* Ajuste o valor conforme necessário */
+}
+
+/* .section__tittle {
+  font-size: 3rem; /* ou ajuste conforme o design */
+  /* color: #fff;
+  text-align: center;
+} */ 
+
+
+.skills {
+  margin-bottom: 100px; /* Ajuste o valor conforme necessário */
+}
+
 .card-container {
   max-width: 1200px;
   width: 100%;
