@@ -4,30 +4,17 @@
   flex-direction: column;
   gap: 64px;
   align-items: center;
-}
-
-.projetos {
   margin-top: 100px; /* Ajuste o valor conforme necessário */
-}
-
-/* .section__tittle {
-  font-size: 3rem; /* ou ajuste conforme o design */
-  /* color: #fff;
+  padding: 40px 20px;
   text-align: center;
-} */ 
-
-
-.skills {
-  margin-bottom: 100px; /* Ajuste o valor conforme necessário */
 }
 
 .card-container {
   max-width: 1200px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px; /* Ajuste conforme necessário */
 }
 
 .card {
@@ -37,16 +24,30 @@
   border-radius: 5px;
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px; /* Mantém consistência com os cards */
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
 .card::before {
   position: absolute;
-  background-color: #0009;
+  background-color: rgba(0, 0, 0, 0.6); /* cor melhorada para clareza */
   content: 'Clique aqui para abrir o projeto';
   width: 100%;
   height: 100%;
   display: grid;
   place-content: center;
+  color: #fff;
+  font-size: 1.2rem;
   transform: translateY(100%);
-  transition: transform 0.6s;
+  transition: transform 0.6s ease;
 }
 
 .card:hover::before {
